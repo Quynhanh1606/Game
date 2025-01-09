@@ -13,7 +13,7 @@ BLANK = None
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-BRIGHTBLUE = (0, 191, 255)  # Sáng hơn một chút
+BRIGHTBLUE = (0, 0, 0)  # Sáng hơn một chút
 DARKTURQUOISE = (0, 0, 0)  # Thay màu turquoise đậm
 BLUE = (0, 0, 255)  # Màu xanh dương
 GREEN = (0, 255, 0)  # Màu xanh lá cây sáng
@@ -178,10 +178,6 @@ def ramdom_moves(board, lastMove=None):
 
     return random.choice(validMoves)
 
-def getLeftTopOfTile(block_x, block_y):
-    left = XMARGIN + (block_x * block_size) + (block_x - 1)
-    top = YMARGIN + (block_y * block_size) + (block_y - 1)
-    return (left, top)
 
 
 def getSpotClicked(board, x, y):
